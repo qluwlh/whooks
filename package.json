@@ -1,0 +1,56 @@
+{
+  "name": "whooks",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "dumi dev",
+    "docs:build": "dumi build",
+    "docs:deploy": "gh-pages -d docs-dist",
+    "build": "father-build",
+    "lint": "yarn lint:js && yarn lint:style && yarn lint:prettier",
+    "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx, --format=pretty",
+    "lint:prettier": "prettier --check \"*/**/*\"",
+    "lint:fix": "yarn lint:js --fix && yarn lint:style --fix && yarn prettier",
+    "prettier": "yarn lint:prettier --write",
+    "deploy": "npm run docs:build && npm run docs:deploy",
+    "release": "standard-version",
+    "publish": "npm run build && npm publish",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage",
+    "pre-commit": "lint-staged",
+    "prepare": "husky install",
+    "commit": "git-cz"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "react": "^16.12.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@umijs/test": "^3.0.5",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "dumi": "^1.0.16",
+    "eslint": "^7.32.0",
+    "eslint-config-soraka": "^0.1.0",
+    "father-build": "^1.17.2",
+    "gh-pages": "^3.0.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.4.0",
+    "standard-version": "^9.3.1",
+    "typescript": "^4.4.3",
+    "yorkie": "^2.0.0"
+  },
+  "license": "MIT"
+}
