@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/wanglihua007/whooks/compare/v0.0.5...v0.1.0) (2021-09-15)
+
+
+### 配置项
+
+* change homepage ([b74f17d](https://github.com/wanglihua007/whooks/commit/b74f17dafcd7a6c7a08d412495c0245f558b70b6))
+
 ### [0.0.5](https://github.com/wanglihua007/whooks/compare/v0.0.4...v0.0.5) (2021-09-15)
 
 
