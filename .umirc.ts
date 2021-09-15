@@ -1,7 +1,5 @@
 import { defineConfig } from 'dumi'
 
-const repo = 'whooks'
-
 export default defineConfig({
   title: 'whooks',
   favicon:
@@ -10,8 +8,17 @@ export default defineConfig({
   outputPath: 'docs-dist',
   mode: 'site',
   hash: true,
-  base: `/${repo}/`,
-  publicPath: `/${repo}/`,
+  extraBabelPlugins: [
+    [
+      'babel-plugin-import',
+      {
+        libraryName: 'antd',
+        libraryDirectory: 'es',
+        style: true,
+      },
+      'antd',
+    ],
+  ],
   navs: [
     null,
     {
