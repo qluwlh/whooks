@@ -1,27 +1,15 @@
 # whooks
 
-## Getting Started
+## 轻松上手
 
-Install dependencies,
-
-```bash
-$ npm i
-```
-
-Start the dev server,
+react hooks 集合
 
 ```bash
-$ npm start
+// 安装依赖
+npm i whooks --save
+
+// 使用 hooks
+import { useModal } from "whooks"
 ```
 
-Build documentation,
 
-```bash
-$ npm run docs:build
-```
-
-Build library via `father-build`,
-
-```bash
-$ npm run build
-```
