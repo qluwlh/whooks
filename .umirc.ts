@@ -1,5 +1,7 @@
 import { defineConfig } from 'dumi'
 
+const repo = 'whooks'
+
 export default defineConfig({
   title: 'whooks',
   favicon:
@@ -8,6 +10,9 @@ export default defineConfig({
   outputPath: 'docs-dist',
   mode: 'site',
   hash: true,
+  // Because of using GitHub Pages
+  base: `/${repo}/`,
+  publicPath: `/${repo}/`,
   extraBabelPlugins: [
     [
       'babel-plugin-import',
