@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/wanglihua007/whooks/compare/v0.0.3...v0.0.4) (2021-09-15)
+
+
+### 配置项
+
+* change umirc mode to site ([da13f5d](https://github.com/wanglihua007/whooks/commit/da13f5d825b52319b7da7be522d12a6f9b944a62))
+
+
+### 新特性
+
+* add useModal hook ([23cb4e3](https://github.com/wanglihua007/whooks/commit/23cb4e37140fbe0606253bed60f8bac3093c2c1b))
+
 ### [0.0.3](https://github.com/wanglihua007/whooks/compare/v0.0.2...v0.0.3) (2021-09-15)
 
 
