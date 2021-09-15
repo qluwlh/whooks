@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/wanglihua007/whooks/compare/v0.1.1...v0.1.2) (2021-09-15)
+
+
+### 配置项
+
+* add github page publicPath ([eb83645](https://github.com/wanglihua007/whooks/commit/eb83645af9d982ca62e8222e425d6f2e868603f3))
+* change homepage ([111cd99](https://github.com/wanglihua007/whooks/commit/111cd9902b305a6abd1de7ee9daf653125470cad))
+
+
+### 构建
+
+* add publishConfig ([23f5b98](https://github.com/wanglihua007/whooks/commit/23f5b9825847fdb4455c34c5f15d7467654b6714))
+
+
+### 文档
+
+* change docs ([4ae359c](https://github.com/wanglihua007/whooks/commit/4ae359cd89c45e3b11995293018277995f7df56a))
+
 ### [0.1.1](https://github.com/wanglihua007/whooks/compare/v0.1.0...v0.1.1) (2021-09-15)
 
 
