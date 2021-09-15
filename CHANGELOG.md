@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/wanglihua007/whooks/compare/v0.0.4...v0.0.5) (2021-09-15)
+
+
+### 构建
+
+* add docs deploy script ([b6bc4de](https://github.com/wanglihua007/whooks/commit/b6bc4ded3696f8ae5c751a208dcc6b924d47399f))
+
+
+### CI
+
+* add git workflows ([381583d](https://github.com/wanglihua007/whooks/commit/381583d3fef952a3a5445bcc4b1b6b10fb2f0704))
+
 ### [0.0.4](https://github.com/wanglihua007/whooks/compare/v0.0.3...v0.0.4) (2021-09-15)
 
 
