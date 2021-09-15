@@ -61,9 +61,6 @@
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": "yarn lint"
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.com/"
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
