@@ -4,7 +4,7 @@
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
-    "docs:deploy": "gh-pages -d docs-dist",
+    "docs:deploy": "yarn docs:build && yarn gh-pages -d docs-dist",
     "build": "father-build",
     "lint": "yarn lint:js && yarn lint:prettier",
     "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx, --format=pretty",
@@ -48,6 +48,9 @@
     "typescript": "^4.4.3",
     "yorkie": "^2.0.0"
   },
+  "keywords": [
+    "react hooks"
+  ],
   "homepage": "https://github.com/wanglihua007/whooks#readme",
   "repository": "https://github.com/wanglihua007/whooks.git",
   "author": "wanglihua <wanglihua@innobuddy.com>",
