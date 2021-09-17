@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/wanglihua007/whooks/compare/v0.2.0...v0.2.1) (2021-09-17)
+
+
+### Bug修复
+
+* remove unuseful script ([e26e124](https://github.com/wanglihua007/whooks/commit/e26e1240d1dece7c8d0592c50e52a0a7b7dc4957))
+
 ## [0.2.0](https://github.com/wanglihua007/whooks/compare/v0.1.2...v0.2.0) (2021-09-17)
 
 
