@@ -8,6 +8,7 @@
     "esModuleInterop": true,
     "sourceMap": true,
     "baseUrl": "./",
+    "resolveJsonModule": true,
     "strict": true,
     "paths": {
       "@/*": ["src/*"],
@@ -30,6 +31,7 @@
     "**/__test__",
     "test",
     "docs",
-    "tests"
+    "tests",
+    "scripts/templates/useHooksName/demo"
   ]
 }

@@ -18,7 +18,8 @@
     "test:coverage": "umi-test --coverage",
     "pre-commit": "lint-staged",
     "prepare": "husky install",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "create": "ts-node ./scripts/create.ts"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -29,6 +30,7 @@
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
+    "@types/fs-extra": "^9.0.12",
     "@umijs/test": "^3.0.5",
     "antd": "^4.16.13",
     "babel-plugin-import": "^1.13.3",
