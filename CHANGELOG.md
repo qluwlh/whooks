@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/wanglihua007/whooks/compare/v0.1.2...v0.2.0) (2021-09-17)
+
+
+### 构建
+
+* remove publishConfig ([247941a](https://github.com/wanglihua007/whooks/commit/247941a3cce859d2929cfa934de088694984507e))
+
+
+### 配置项
+
+* fix lint js script ([fb83bec](https://github.com/wanglihua007/whooks/commit/fb83becc3e0ee59c32764274edba84cd8face5b0))
+
+
+### 新特性
+
+* add useConst ([6a38dd1](https://github.com/wanglihua007/whooks/commit/6a38dd1df5ccd137cb3344011859630929b1b6bf))
+
 ### [0.1.2](https://github.com/wanglihua007/whooks/compare/v0.1.1...v0.1.2) (2021-09-15)
 
 
