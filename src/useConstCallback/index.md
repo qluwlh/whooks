@@ -22,5 +22,11 @@ group:
 ## API
 
 ```typescript
-const fn = useConstCallback(() => {})
+const fn = useConstCallback(callback: T extends (...args: any[]) => any)
 ```
+
+## 参数
+
+| 参数     | 说明 | 类型                                | 默认值 |
+| :------- | :--- | :---------------------------------- | :----- |
+| callback | 函数 | `T extends (...args: any[]) => any` | -      |
