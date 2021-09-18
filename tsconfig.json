@@ -32,6 +32,6 @@
     "test",
     "docs",
     "tests",
-    "scripts/templates/useHooksName/demo"
+    "scripts"
   ]
 }
