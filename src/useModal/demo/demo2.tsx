@@ -1,25 +1,57 @@
 /**
- * title: 弹窗状态
- * desc: 可打开和关闭弹窗
+ * title: 记录信息
+ * desc: 可记录额外信息
  *
- * title.zh-CN: 弹窗状态
- * desc.zh-CN: 可打开和关闭弹窗
+ * title.zh-CN: 记录信息
+ * desc.zh-CN: 可记录额外信息
  */
 
-import React, { useState } from 'react'
+import React, { FC } from 'react'
 import { Modal, Button } from 'antd'
 import { useModal } from 'whooks'
 
+interface User {
+  name: string
+  age: number
+}
+
+interface UserInfoModalProps {
+  visible: boolean
+  onRequestClose: () => void
+  userInfo: User
+}
+
+const UserInfoModal: FC<UserInfoModalProps> = (props) => {
+  const { visible, onRequestClose, userInfo } = props
+  return (
+    <Modal visible={visible} onCancel={onRequestClose}>
+      <div>你好：{userInfo.name}</div>
+      <div>你今年{userInfo.age}岁了</div>
+    </Modal>
+  )
+}
+
 export default () => {
-  const modal = useModal()
+  const userInfoModal = useModal<User>()
+  const viewUser = () => {
+    userInfoModal.open({
+      name: '张三',
+      age: 18,
+    })
+  }
   return (
     <div>
-      <Button type="primary" onClick={() => modal.open()}>
-        打开弹窗
+      <div>打开弹窗的同时，携带props的信息</div>
+      <Button type="primary" onClick={viewUser}>
+        查看
       </Button>
-      <Modal visible={modal.isOpen} onCancel={modal.close}>
-        hello useModal
-      </Modal>
+      {userInfoModal.currentItem && (
+        <UserInfoModal
+          visible={userInfoModal.isOpen}
+          onRequestClose={userInfoModal.close}
+          userInfo={userInfoModal.currentItem}
+        />
+      )}
     </div>
   )
 }

@@ -19,6 +19,10 @@ group:
 
 <code src="./demo/demo1.tsx" />
 
+### 额外数据
+
+<code src="./demo/demo2.tsx" />
+
 ## API
 
 ```typescript
@@ -39,7 +43,7 @@ const { open, close, isOpen, currentItem, options } = useModal<T, O>()
 
 ### 我可以在一个组件中使用多个 useModal 吗？
 
-可以的，可以的，建议像下面这样使用。
+可以的，建议像下面这样使用。
 
 ```typescript
 const viewModal = useModal()
