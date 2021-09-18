@@ -11,7 +11,7 @@ group:
 
 # useConst
 
-常量
+常量值
 
 ## 代码演示
 
@@ -22,5 +22,11 @@ group:
 ## API
 
 ```typescript
-const value = useConst('default value')
+const value = useConst(initialValue: T | (() => T))
 ```
+
+## 参数
+
+| 参数         | 说明       | 类型             | 默认值 |
+| :----------- | :--------- | :--------------- | :----- |
+| initialValue | 常量初始值 | `T \| (() => T)` | -      |
