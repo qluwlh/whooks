@@ -11,7 +11,7 @@ group:
 
 # useConstCallback
 
-常量函数，要注意：如果里边有state值，state将只会取第一次的值
+常量函数，要注意：如果里边有 state 值，state 将只会取第一次的值
 
 ## 代码演示
 

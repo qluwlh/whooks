@@ -1,9 +1,9 @@
 /**
  * title: 常量
- * desc: 常亮值
+ * desc: 常量值
  *
  * title.zh-CN: 常量
- * desc.zh-CN: 常亮值
+ * desc.zh-CN: 常量值
  */
 
 import React from 'react'
