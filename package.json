@@ -65,7 +65,7 @@
   },
   "license": "MIT",
   "lint-staged": {
-    "*/**/*.{js,jsx,ts,tsx}": "yarn lint:fix"
+    "*/**/*.{js,jsx,ts,tsx,md}": "yarn lint:fix"
   },
   "config": {
     "commitizen": {
