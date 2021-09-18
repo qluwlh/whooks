@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/wanglihua007/whooks/compare/v0.2.1...v0.2.2) (2021-09-18)
+
+
+### 构建
+
+* add create hooks script ([70b94c5](https://github.com/wanglihua007/whooks/commit/70b94c5bc41ef199dc1939c402396371e7016a68))
+
+
+### 新特性
+
+* add useConstCallBack ([08d7c34](https://github.com/wanglihua007/whooks/commit/08d7c345f06966295e7fb06f98893452df6fdcf0))
+
+
+### 文档
+
+* add useModal demo2 ([96bae4f](https://github.com/wanglihua007/whooks/commit/96bae4ff23584fd787495c0d60e46df2cfc427e0))
+* fix useConst demo demo docs ([ad9a20c](https://github.com/wanglihua007/whooks/commit/ad9a20cbeb131deb16028fff0f8cf9d1284f6aee))
+* update useConst docs ([2956b13](https://github.com/wanglihua007/whooks/commit/2956b13b0a1c6112b0d6182d174160f0bcb38118))
+* update useConst docs ([d6602be](https://github.com/wanglihua007/whooks/commit/d6602beaf735bb9eb366a640ffa1526656238ad4))
+* update useConstCallback docs ([9562f20](https://github.com/wanglihua007/whooks/commit/9562f204ebdc07ee8dfb41c4acb6f88f7fde80ee))
+* update useConstCallback docs ([d5b645c](https://github.com/wanglihua007/whooks/commit/d5b645c8607e70df24c0a08a5844df6f53f4d8fb))
+* update useModal docs ([74b4cbd](https://github.com/wanglihua007/whooks/commit/74b4cbd7842a0c756af259a1c30688c7f91d5b82))
+* update useModal docs ([3e7d557](https://github.com/wanglihua007/whooks/commit/3e7d5571af6c4831962201514001e1fdcfe98f10))
+
+
+### 配置项
+
+* add md lint-staged lint fix ([36520db](https://github.com/wanglihua007/whooks/commit/36520db6361074fecc2104cc58967ef4f63a7875))
+
 ### [0.2.1](https://github.com/wanglihua007/whooks/compare/v0.2.0...v0.2.1) (2021-09-17)
 
 
