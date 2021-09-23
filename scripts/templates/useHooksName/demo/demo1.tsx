@@ -10,6 +10,6 @@ import React from 'react'
 import { useHooksName } from 'whooks'
 
 export default () => {
-  const {} = useHooksName()
+  const {} = useHooksName({})
   return <div>测试用例</div>
 }
