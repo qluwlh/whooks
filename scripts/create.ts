@@ -9,11 +9,21 @@ const toUpperCaseFirstLetter = (str: string) => {
   return `${str.slice(0, 1).toUpperCase()}${str.slice(1)}`
 }
 
-const replacePageName = (text: Buffer, replaceName: string) => {
+export const toLowerCaseFirstLetter = (str: string) => {
+  return `${str.slice(0, 1).toLowerCase()}${str.slice(1)}`
+}
+
+export const replaceName = (text: Buffer | string, sourceName: string, replaceName: string) => {
   return text
     .toString()
-    .replace(/useHooksName/g, replaceName)
-    .replace(/UseHooksName/g, toUpperCaseFirstLetter(replaceName))
+    .replace(
+      new RegExp(toLowerCaseFirstLetter(sourceName), 'g'),
+      toLowerCaseFirstLetter(replaceName)
+    )
+    .replace(
+      new RegExp(toUpperCaseFirstLetter(sourceName), 'g'),
+      toUpperCaseFirstLetter(replaceName)
+    )
 }
 interface Path {
   from: string
@@ -22,7 +32,7 @@ interface Path {
 const writeFileSync = (path: Path, pageName: string) => {
   try {
     const text = fs.readFileSync(path.from)
-    fs.writeFileSync(path.to, replacePageName(text, pageName), 'utf8')
+    fs.writeFileSync(path.to, replaceName(text, 'useHooksName', pageName), 'utf8')
   } catch (error) {
     console.error(`error`, error)
     process.exit(1)
@@ -80,9 +90,9 @@ const create = (name: string) => {
       }
     })
   }
-  readdirSync('', (dir: string, file: string) => {
-    const sourcePath = path.join(templatesPath, `${dir}/${file}`)
-    const targetPath = path.join(srcPath, hooksName, `${dir}/${file}`)
+  readdirSync('', (dir, file) => {
+    const sourcePath = path.join(templatesPath, dir, file)
+    const targetPath = path.join(srcPath, hooksName, dir, file)
     writeFileSync({ from: sourcePath, to: targetPath }, hooksName)
   })
   console.log()
