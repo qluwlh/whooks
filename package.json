@@ -1,6 +1,6 @@
 {
   "name": "whooks",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",

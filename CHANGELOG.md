@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.4](https://github.com/wanglihua007/whooks/compare/v0.2.3...v0.2.4) (2021-09-24)
+
+
+### 重构
+
+* update create script ([78d7874](https://github.com/wanglihua007/whooks/commit/78d7874f19748175611665dfb05ad4313fa5e47f))
+
+
+### 配置项
+
+* update create template demo ([b1a9adf](https://github.com/wanglihua007/whooks/commit/b1a9adf4ba322ce264855735dc24fa63ed2c9680))
+
+
+### 新特性
+
+* add useDeepCompareEffect hooks ([a1799d4](https://github.com/wanglihua007/whooks/commit/a1799d455dfae11c48393ba341ed12e9e6c0cd5b))
+
 ### [0.2.3](https://github.com/wanglihua007/whooks/compare/v0.2.2...v0.2.3) (2021-09-18)
 
 
